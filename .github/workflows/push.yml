@@ -3,9 +3,9 @@ name: Code is pushed
 
 on:
   push:
-    branches: [main]
+    branches: [main, 1.x]
   pull_request:
-    branches: [main]
+    branches: [main, 1.x]
 
 jobs:
   document:
