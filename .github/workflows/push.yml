@@ -1,0 +1,19 @@
+---
+name: Code is pushed
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  document:
+    name: Document what happen when code is pushed
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Tell us about the push
+        run: echo "Code was pushed to the ${{ github.ref }} branch of the repository ${{ github.repository }} by ${{ github.actor }}."
+      - name: Show the environment
+        run: env

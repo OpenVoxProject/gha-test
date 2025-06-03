@@ -1,0 +1,20 @@
+---
+name: A tag is pushed
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  document:
+    name: Document what happen when a tag is pushed
+    runs-on: ubuntu-24.04
+    # Optional but recommended to use a specific environment
+    environment: release
+
+    steps:
+      - name: Tell us about this tag
+        run: echo "TAG ${{ github.ref_name }}"
+      - name: Show the environment
+        run: env
