@@ -22,6 +22,10 @@ on:
         required: false
         default: ''
         type: string
+    secrets:
+      github_pat:
+        description: 'The pccibot PAT that will create the PR'
+        required: true
 
 permissions:
   contents: write
