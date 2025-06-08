@@ -18,7 +18,8 @@ jobs:
   prepare_release:
     uses: smortex/shared-actions/.github/workflows/prepare_release.yml@prepare-release
     with:
-      version: ${{ github.event.inputs.version }}
       allowed_owner: 'smortex'
+      base-branch: ${{ github.event.inputs.base-branch }}
+      version: ${{ github.event.inputs.version }}
     secrets:
       github_pat: ${{ secrets.GHA_TOKEN }}
