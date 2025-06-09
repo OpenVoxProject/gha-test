@@ -22,4 +22,4 @@ jobs:
       base-branch: ${{ github.event.inputs.base-branch }}
       version: ${{ github.event.inputs.version }}
     secrets:
-      github_pat: ${{ secrets.GHA_TOKEN }}
+      github_pat: ${{ secrets.OPENVOXBOT_COMMIT_AND_PRS }}
