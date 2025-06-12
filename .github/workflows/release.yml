@@ -1,0 +1,25 @@
+name: 'Release'
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Module version to be released.'
+        required: false
+        default: ''
+        type: string
+      base-branch:
+        description: 'The branch where we do this release.'
+        required: false
+        default: ''
+        type: string
+
+jobs:
+  release:
+    uses: OpenVoxProject/shared-actions/.github/workflowsrelease.yml@release
+    with:
+      allowed_owner: 'OpenVoxProject'
+      base-branch: ${{ github.event.inputs.base-branch }}
+      version: ${{ github.event.inputs.version }}
+    secrets:
+      github_pat: ${{ secrets.OPENVOXBOT_COMMIT_AND_PRS }}
