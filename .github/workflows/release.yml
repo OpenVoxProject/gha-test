@@ -16,7 +16,7 @@ on:
 
 jobs:
   release:
-    uses: OpenVoxProject/shared-actions/.github/workflowsrelease.yml@release
+    uses: OpenVoxProject/shared-actions/.github/workflows/release.yml@release
     with:
       allowed_owner: 'OpenVoxProject'
       base-branch: ${{ github.event.inputs.base-branch }}
