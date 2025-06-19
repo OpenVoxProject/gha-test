@@ -23,3 +23,4 @@ jobs:
       version: ${{ github.event.inputs.version }}
     secrets:
       github_pat: ${{ secrets.OPENVOXBOT_COMMIT_AND_PRS }}
+      ssh_private_key: ${{ secrets.OPENVOXBOT_SSH_PRIVATE_KEY }}
