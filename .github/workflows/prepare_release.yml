@@ -14,6 +14,8 @@ on:
         default: ''
         type: string
 
+permissions: {}
+
 jobs:
   prepare_release:
     uses: OpenVoxProject/shared-actions/.github/workflows/prepare_release.yml@prepare-release
