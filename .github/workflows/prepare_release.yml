@@ -18,7 +18,7 @@ permissions: {}
 
 jobs:
   prepare_release:
-    uses: smortex/shared-actions/.github/workflows/prepare_release.yml@include-release-in-bundle
+    uses: OpenVoxProject/shared-actions/.github/workflows/prepare_release.yml@main
     with:
       allowed_owner: 'OpenVoxProject'
       base-branch: ${{ github.event.inputs.base-branch }}
