@@ -1,3 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'rake'
+group(:release, optional: true) do
+  gem 'rake'
+end
