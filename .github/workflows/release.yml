@@ -18,7 +18,7 @@ permissions: {}
 
 jobs:
   release:
-    uses: OpenVoxProject/shared-actions/.github/workflows/release.yml@main
+    uses: smortex/shared-actions/.github/workflows/release.yml@relase-rc
     with:
       allowed_owner: 'OpenVoxProject'
       base-branch: ${{ github.event.inputs.base-branch }}
