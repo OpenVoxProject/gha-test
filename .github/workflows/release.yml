@@ -18,7 +18,7 @@ permissions: {}
 
 jobs:
   release:
-    uses: OpenVoxProject/shared-actions/.github/workflows/release.yml@fix-rc
+    uses: OpenVoxProject/shared-actions/.github/workflows/release.yml@main
     with:
       allowed_owner: 'OpenVoxProject'
       base-branch: ${{ github.event.inputs.base-branch }}
